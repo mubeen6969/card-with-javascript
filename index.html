@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🛒 Skora Care Shop</h1>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <h2>Product 1</h2>
+      <p>Price: $10</p>
+      <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <h2>Product 2</h2>
+      <p>Price: $20</p>
+      <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <h2>Product 3</h2>
+      <p>Price: $15</p>
+      <button onclick="addToCart('Product 3', 15)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items">
+      <!-- Cart items will appear here -->
+    </ul>
+    <p id="total">Total: $0</p>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
