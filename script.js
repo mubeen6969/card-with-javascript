@@ -25,7 +25,7 @@ const updateCart = () => {
   const total = document.getElementById('total');
 
   // Clear old cart
-  cartItems.innerHTML = '123';
+  cartItems.innerHTML = '';
 
   let totalPrice = 0;
 
@@ -41,4 +41,3 @@ const updateCart = () => {
   // Update total price
   total.textContent = `Total: $${totalPrice}`;
 }
-updateCart();
