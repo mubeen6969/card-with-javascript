@@ -8,13 +8,14 @@ const addToCart = (productName, productPrice) => {
     name: productName,
     price: productPrice
   };
-
+  console.log(product);
   // Pushing product to cart array
   cart.push(product);
-
+  
+  console.log(cart);
   // Showing success alert
   alert(`${productName} added to cart!`);
-
+  
   // Updating cart display
   updateCart();
 }
